@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "916144bf-21d0-4ac8-ab96-c90ad4c42264",
+		"name": "Ivy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33192043"
+	},
+	"item": [
+		{
+			"name": "https://ivymoda.com/ajax/add-to-cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "tt_sessionId",
+						"value": "\"c35de117-1eee-11ef-a098-08c0ebeaf662::mreKVG2-O7mba0YKCy7D\""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_sub_id",
+							"value": "192303",
+							"type": "text"
+						},
+						{
+							"key": "product_sub_quantity",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "data_type",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "action",
+							"value": "add",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ivymoda.com/ajax/add-to-cart",
+					"protocol": "https",
+					"host": [
+						"ivymoda",
+						"com"
+					],
+					"path": [
+						"ajax",
+						"add-to-cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ivymoda.com/ajax/shopping-cart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "tt_sessionId",
+						"value": "\"cb2038f8-1e27-11ef-b752-08c0eb4a3812::stncG2mw7IKqoQw7R9sM\""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://ivymoda.com/ajax/shopping-cart",
+					"protocol": "https",
+					"host": [
+						"ivymoda",
+						"com"
+					],
+					"path": [
+						"ajax",
+						"shopping-cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ivymoda.com/ajax/remove-from-cart",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "tt_sessionId",
+						"value": "\"c35de117-1eee-11ef-a098-08c0ebeaf662::mreKVG2-O7mba0YKCy7D\""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_sub_id",
+							"value": "192304",
+							"type": "text"
+						},
+						{
+							"key": "del_product_index",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "product_sub_quantity",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "data_type",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ivymoda.com/ajax/remove-from-cart",
+					"protocol": "https",
+					"host": [
+						"ivymoda",
+						"com"
+					],
+					"path": [
+						"ajax",
+						"remove-from-cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ivymoda.com",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "tt_sessionId",
+						"value": "\"c35de117-1eee-11ef-a098-08c0ebeaf662::mreKVG2-O7mba0YKCy7D\""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ivymoda.com",
+					"protocol": "https",
+					"host": [
+						"ivymoda",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ivymoda.com/customer/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "tt_sessionId",
+						"value": "\"c35de117-1eee-11ef-a098-08c0ebeaf662::mreKVG2-O7mba0YKCy7D\""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customer_account",
+							"value": "bichngoc17072003@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "customer_password",
+							"value": "Nn@17072003",
+							"type": "text"
+						},
+						{
+							"key": "g-recaptcha-response",
+							"value": "03AFcWeA67ykybykT1tPYDyMF25Hc-WXIOR6G7FLG7j0DaGG7bZvmef0nwt80_vfHISXGCNWNvrjW_HgxRwmIobt53vVOieFw8bTpV6erfdnEPlRsPy_MEx0NyrSkPhjwWhkMMyRc1lXY857nf36ImhqgFh0YWCSxQA4NzPeLqLewiq__eh5D_lFJbprs4xRteW4jy6FosDfBdA7a6y-MObm_j4fo6AZOdY5VGNnt49CJMa9ga0z3BAmYJaa8DD5RtsRy7QM4v8MwlFIRnnMXptBkH0ldEByPRLvauxtaUnQPIQEEfdFrLUqz-iPtwKR4ctuPVjYsaN7gWrkAhIDkyvEectVMSygEF1u1dS19T86eg_xp9orYGcgxEe2ypYs8K8DCVNW2Yd2mQOu6GrUDO-UNEPpJ9lHIFiPemGxAbahQ152Mfv-cUSQ0b1FTtO_OLdCvGWO0u4-mwI9STW63pkLPVCuiznvK1vutfmODXUmEk9O5GyFbkgrdCHuA8_zz8UHyDi_pQRy3GuR7bbQcjXfQRe397-pelWsuWFF-CbrkI9J5kxBJ50H1JTKW_DSex2Pso0nPjK-FBOXOesmQ1eNTidNbHeVWsVQ3HPsOrquAeLdJRhvNcVtUmewTlqgaPSdToFqIp97ElphO1fkmcIdTg5xK9a_T-7un0pmHFICUdgLhUxxN9mqz5ixEaNWfoHvv8T0lwaAExjz-JDoQrzhRmQ-47wglOgpC5O5pOHOFb0WMkAMYl2VnDDWoC_elBk_OcZJc6ytCbKn3x740Dkyc7mhqz1_HY0xFUTH-OjiMGfWyBbZKdDdyU8OrmL97nQ_-0LBOH3OKe64FsOnuyQLNEo7AZJYJMX3FoHwTQCFAtgh9aJ08H5ULG9mjEE3jV-0IhaJ_vbfwmrRKQCx5i0eKHo2yRx_3ptXvflU3t8Y3YX0eB99kT6zIMoiCc8dpRlquUsP-La1mtUXvusUwKiCcPdAuULNa5Z8eMhyPn5MZk_91eXPoLOSp-obis2Tl1QpkmdgJrjwSlBLEDe8M2jhLpqYImPqDeQuiAIi9irjvS5c6WzmB-aPJPGgP75zw0JJMVjMWTDxi8JdeaLObSqzB9X1ZUtsQAmP4KwMWxhoquD6wqBzIU0oOa8oCbh96BBPANfmaEQpjDws38FQcAhClXlMe9npea1Bek39Sl6e5Vd7_h6UGqWED25cKXVcnhiyhZk4CXi3QOqbYzBJfaMZbB4F_wN9Ud6RAGrJL1lmgcGd8JPddyB737Ye5416DxE4KbzGNSA8odZMtsGzgISB_nx6puxZWxz3WVedhLEzaKkRFGROmyS5mqXsmPafOj-gk5cBfKycY7uilFzvNr2bpIximo5q2Yr2K2bAxy7kn8Tlf6xlFHVh_71nu9pyKZKr4qFr5e5yZU7hWvrTM1gyef0vfAu6jxVna9VIdaSww_HSxdPziKdP9-0TJkzd3jfTBtSLspANVN8BBQk8vHnA7TPCLN92PpjJJDTNGkN3VssWLmvuNxllJPGSVF1J8DPV-lpXulrlBHX-_TVzjBXq9AcyYa7mz1sGzFQg1C4guU14DzY3pI0sZhwkIGQAkfPzU3-R34N66IIAI-0kf8G_T8FT9d0bOuHRIVwwmAe04TGURp235I02PistfGV59BghT8z7vTnkrMnO9KwvDZwaGf_X01osb256eJG-b30mfquy_Xt_A6_EqNuqVsR8faSOgtOkkZ4QDD9ZQiBk0J66_Q7C6oScOxz5IzuX7AZfYtco9WvZmBreX5prr42ah08O4M1AWTmpboFTaN3nN55tM_HGl90W7iSj96tndYLqIWmU0b_OcNjece7Vmlhp3jQd9Dn8uuFIOGnYibx8snFNctoWSEY1tui1lotT2WVt3VZ4g7sKlsRwTCqJMPplvUZntZZcUuoCSi",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ivymoda.com/customer/login",
+					"protocol": "https",
+					"host": [
+						"ivymoda",
+						"com"
+					],
+					"path": [
+						"customer",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ivymoda.com/thanhtoan/giohang?tt_sessionId=\"c35de117-1eee-11ef-a098-08c0ebeaf662::mreKVG2-O7mba0YKCy7D\"",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ivymoda.com/thanhtoan/giohang?tt_sessionId=\"c35de117-1eee-11ef-a098-08c0ebeaf662::mreKVG2-O7mba0YKCy7D\"",
+					"protocol": "https",
+					"host": [
+						"ivymoda",
+						"com"
+					],
+					"path": [
+						"thanhtoan",
+						"giohang"
+					],
+					"query": [
+						{
+							"key": "tt_sessionId",
+							"value": "\"c35de117-1eee-11ef-a098-08c0ebeaf662::mreKVG2-O7mba0YKCy7D\""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
